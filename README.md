@@ -1,37 +1,26 @@
-# Royal Cruise Travel Guide
+# Royal Cruise
 
-A premium, responsive cruise discovery website concept for the US market.
+A premium, responsive multi-page cruise discovery and enquiry website for the US market.
 
-## Experience
-- Cinematic ocean photography with a refined navy, cream and gold visual identity.
-- Responsive mobile navigation and scroll-reveal transitions, with reduced-motion support.
-- Destination discovery for the Caribbean, Bahamas, Alaska and Mediterranean.
-- Cruise inspiration cards, trip-planning guidance, FAQs and enquiry form UI.
-- SEO metadata, Open Graph tags, robots.txt, sitemap.xml, privacy notice and website terms.
+## Pages
+- `index.html` — editorial homepage and destination discovery.
+- `destinations.html` — Caribbean, Alaska, Mediterranean and Bahamas destination cards.
+- `cruise-ideas.html` — travel styles and trip inspiration.
+- `planning.html` — planning process and verification principles.
+- `contact.html` — dedicated cruise enquiry form UI.
+- `privacy.html`, `terms.html` — starter legal disclosures to review and customize.
 
-## Project files
-- `index.html`, `styles.css`, `app.js`: static frontend.
-- `api/enquiries.js`: server endpoint source written for the Hatchable runtime.
-- `migrations/`: PostgreSQL schema for enquiry records and optional notification settings.
-- `privacy.html`, `terms.html`: starter legal disclosures that must be reviewed and customized.
-- `.github/workflows/pages.yml`: GitHub Pages deployment workflow.
+## Visual system
+Royal Cruise crest-inspired mark, midnight navy, antique gold and warm ivory, cinematic photography, animated page entrances, scroll reveals, responsive navigation and reduced-motion support. The static implementation uses lightweight CSS/JavaScript motion transitions; it does not import the React-only Framer Motion library.
 
-## Run / deploy
-The frontend is plain HTML, CSS and JavaScript. Run it locally with any static web server rooted at the repository root.
+## Deploy
+Static HTML/CSS/JS; no build step required. GitHub Actions deployment is configured in `.github/workflows/pages.yml`. In repository Settings → Pages, set source to **GitHub Actions** if it is not enabled.
 
-A GitHub Actions workflow is included to deploy the static site to GitHub Pages on pushes to `main`. In repository Settings → Pages, set the build/deployment source to **GitHub Actions** if it is not already enabled.
+## Production notes
+- The enquiry form intentionally does not send or store details until a verified service is connected. Demo submissions show a clear warning.
+- No live cruise fares or sailing availability are invented. Verify exact sailing, total fare, taxes, cabin category and terms with a supplier.
+- Add verified operator contact details and complete legal disclosures before launch.
+- Confirm image licensing and final Pages URL; update `sitemap.xml` if needed.
+- `api/enquiries.js` requires a compatible runtime and database; GitHub Pages cannot execute it.
 
-**Important:** The enquiry form currently validates fields but does not send or store customer information. This is deliberate: no verified enquiry destination or backend connection has been configured. The supplied `api/enquiries.js` endpoint requires the Hatchable runtime and its database; GitHub Pages cannot execute it. Connect and test a compatible backend or enquiry provider before collecting real leads.
-
-## Pricing and booking integrity
-The site does not invent live cruise fares or availability. An enquiry is not a reservation. Verify current pricing and sailing availability with a reliable supplier before presenting them as confirmed.
-
-## Brand and trademarks
-Royal Cruise Travel Guide is a standalone travel-guide concept and does not claim to be the official Royal Caribbean website or to be endorsed by any cruise line. Third-party names and marks remain the property of their owners.
-
-## Before public launch
-- Add a verified business contact method and complete legal disclosures for the actual operator and jurisdiction.
-- Configure and test end-to-end enquiry capture and notification delivery.
-- Verify image usage rights for the intended production use.
-- Confirm the final Pages URL and update sitemap.xml if the URL differs.
-- Connect a reliable live cruise inventory/pricing source if displaying current fares is required.
+This is an independent cruise travel guide concept and is not the official website of Royal Caribbean or any cruise line. Third-party marks belong to their respective owners.
