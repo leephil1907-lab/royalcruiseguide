@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace the placeholder base URL with the final verified public website URL before submitting this sitemap. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://leephil1907-lab.github.io/royalcruiseguide/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url><url><loc>https://leephil1907-lab.github.io/royalcruiseguide/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url><url><loc>https://leephil1907-lab.github.io/royalcruiseguide/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url></urlset>
+<!-- Update this base URL if the verified public site URL differs. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/destinations.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/cruise-ideas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/planning.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/privacy.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://leephil1907-lab.github.io/royalcruiseguide/terms.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+</urlset>
